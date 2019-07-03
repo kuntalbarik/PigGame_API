@@ -3,6 +3,7 @@ import jsonpickle
 import PigGame.PROVIDER.mainClass as P
 app = Flask(__name__)
 
+###APIs
 @app.route('/Game/CreateGame/<gametype>',methods=['GET'])
 def createGame(gametype):
     customGame = P.customGame()
