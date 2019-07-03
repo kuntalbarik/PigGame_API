@@ -17,7 +17,7 @@ def createPlayer(playerNumber):
     return p1,p2
 
 @app.route('/Game/SetHumanPlayer/<humanObject>/<name>/<tempScore>/<finalScore>',methods=['POST'])
-def setHumanPlayer(humanObject,name,tempScore,finalScore):
+def setHumanPlayer(humanObject,name,tempScore):
     customeGame=P.customGame()
     customeGame.setHumanPlayer(humanObject,name,tempScore,finalScore)
 
